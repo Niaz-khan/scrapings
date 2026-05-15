@@ -1,0 +1,14 @@
+# Universal Web Scraper — Requirements
+# Install with: pip install -r requirements.txt
+# Then run:      scrapling install   (downloads browser binaries)
+
+# ── Core ──────────────────────────────────────────────────────────────────
+scrapling[all]          # adaptive parsing + all fetchers (Fetcher, StealthyFetcher, DynamicFetcher)
+requests                # fallback HTTP client
+beautifulsoup4          # HTML parsing (used in detection + extraction)
+lxml                    # fast HTML parser backend for BeautifulSoup
+playwright
+
+# ── Optional extras ───────────────────────────────────────────────────────
+# pandas                # if you want DataFrame/Excel export
+# openpyxl              # Excel .xlsx export support
